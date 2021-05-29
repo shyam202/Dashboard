@@ -1,0 +1,168 @@
+profile {
+    background: #f3f4f6;
+    grid-area: profile;
+    overflow-y: auto;
+}
+
+:root{
+    --myfont: 'Mulish', sans-serif;
+    --my-btn-font: 'Montserrat', sans-serif;
+    --lg-lightcolor: linear-gradient(to left, rgba(116, 235, 213, 0.6), rgba(159, 172, 230, 0.6));
+    --lg-color: linear-gradient(to left, #74ebd5, #9face6);
+}
+
+.profile__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 20px 20px;
+   }
+  
+  .card_user {
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    height: 50%;
+    border-radius: 15px;
+    border:2px solid #3a3e41;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+  }
+
+  .card_profile {
+    display:flexbox;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .card_profile > img {
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .card_profile > h1 {
+    text-align: center;
+    font-style: var(--myfont);
+    font-weight: 900;
+   }
+
+   .card_profile > h2 {
+    text-align: left;
+    font-style: var(--myfont);
+    font-weight: 500;
+   }
+  
+  .card_form {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    height: 100%;
+    width:200%;
+    padding: 10px;
+    border-radius: 15px;
+    border:2px solid #3a3e41;
+    background: #ffffff;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+  }
+
+  .card_inside {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .card_desig {
+    display: inline-block;
+    border: 1px solid #3a3e41;
+    background: #3a3e41;
+    text-align: center;
+    padding:5px;
+    margin: 0 90px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+ .card_form {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  
+  .form {
+    padding: 10px;
+}
+
+.form-control {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.form-control input{
+    width: 450%;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    font-family: var(--myfont);
+    font-size: 14px;
+    padding: 12px;
+}
+
+.form-control textarea{
+    width: 450%;
+    height: 15vh;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    font-family: var(--myfont);
+    font-size: 14px;
+    padding: 12px;
+}
+
+
+
+
+.form-control.error input {
+ 
+    border-color:#e74c3c;
+}
+
+
+
+.form .btn {
+    background: var(--lg-color);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: block;
+    font-family: var(--my-btn-font);
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 1s ease;
+    visibility: visible;
+}   
+
+.form .btn:hover {
+    background: linear-gradient(to right, #74ebd5, #9face6);
+}
+
+  
+  @media only screen and (max-width: 855px) {
+    .posts__cards {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-bottom: 0;
+    }
+  }  

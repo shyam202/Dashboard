@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+.main_div {
+  width: 300%;
+  height: 100vh;
+  background: linear-gradient(to right, white, Goldenrod);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+
+.center_div{
+    width: 50%;
+    height: 90vh;
+    background: linear-gradient(to bottom, white, #E6E6FA);
+    box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  input[type=text], select {
+    width: 50%;
+    padding: 12px;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin: 20px 0;
+    text-align: center;
+    background-color: white;
+   
+  }
+  button{
+    padding:0 20px; 
+    min-height: 40px; 
+    border-radius: 50%;
+    font-family: "Raleway", sans-serif;
+    font-size :2rem;
+    color: black;
+    outline: none;
+    border: 2px solid;
+    cursor: pointer;  
+    margin-left: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+  }
+
+  button :hover{
+    background-color: #4CAF50;
+  }
+  
+  .todo_style{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
+  
+  
+  .todo_style .fa-times{
+    width: 20px;
+    height: 20px;
+
+    justify-content: center;
+    align-items: center;
+    background-color: #8566aa;
+    border-radius: 50%;
+    margin: 0 25px 0 35px;
+    color: aliceblue;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.3);
+  }
+  
+  .todo_style .fa-times:hover{
+    background-color: crimson;
+  }
+  
+  .todo_style .fa-times:hover .list_style{
+   color: crimson;
+  }
+  
+  .todo_style .deleteIcon{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8566aa;
+    border-radius: 50%;
+    margin: 0 15px 0 35px;
+    color:tomato ;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.3);
+  
+  }
+  
+@media(max-width: 768px){
+    .center_div{
+      width: 55%;
+      }
+    
+      .todo_style .fa-times{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 15px 0 15px;
+      }
+    
+      button{
+        min-height: 40px;
+        font-size: 30px;
+        width: 40px;
+        color: #fff;
+        margin-left: 5px;
+    
+      }
+      
+    }
